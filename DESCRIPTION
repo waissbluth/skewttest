@@ -1,0 +1,11 @@
+Package: skewttest
+Type: Package
+Title: Bootstrapped Skewness-Adjusted t-test
+Version: 0.1
+Date: 2015-10-24
+Authors@R: person("Nicolás", "Waissbluth", email = "nwaissbl@uc.cl", role = c("aut", "cre"))
+Description: Implements the Bootstrapped Skewness-Adjusted t-test as in Lyon et al (1999) for testing long run mean abnormal returns.
+License: GNU General Public License v3.0
+LazyData: TRUE
+Suggests:
+  testthat

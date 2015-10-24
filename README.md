@@ -2,10 +2,15 @@
 
 Implementation in R of the Bootstrapped Skewness-Adjusted t-test for testing long run mean abnormal returns as in "[Improved Methods for Tests of Long-Run Abnormal Stock Returns](http://doi.org/10.1111/0022-1082.00101)" by Lyon et al (1999).
 
-## Usage
+## Installation
 
     install_github('waissbluth/skewttest')
     library('skewttest')
+    # Read the docs:
+    ?skewt.test
+    
+## Usage
+
     # Generate 100 samples from a gamma distribution
     x <- rgamma(100,2,1)
     # Perform a skewed t-test
@@ -13,9 +18,8 @@ Implementation in R of the Bootstrapped Skewness-Adjusted t-test for testing lon
     # Compare to traditional t-test
     t.test(x, mu=2)
 
-
 ## Author
 Nicolás Waissbluth
 
 ## License
-GNU General Public License v3.0
+[GNU General Public License v3.0](http://www.gnu.org/licenses/gpl-3.0.en.html)

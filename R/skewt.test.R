@@ -62,11 +62,12 @@ skewt.test <-
     names(sd) <- "sd"
     names(mu) <- "mean"
     attr(cint, "conf.level") <- conf.level
-    method <- "Bootrsapped skewness-adjusted t-test"
+    method <- "Bootrsapped skewness-adjusted t-test (Lyon et al, 1999)"
+    alternative <- "two-sided"
     rval <- list(
       statistic = tstat, parameter = sd, p.value = pval,
       conf.int = cint, estimate = mx, null.value = mu,
-      alternative = 'two-sided', method = method, data.name = dname
+      alternative = alternative, method = method, data.name = dname
     )
     class(rval) <- "htest"
     return(rval)

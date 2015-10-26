@@ -1,4 +1,4 @@
-# Bootrsapped skewness-adjusted t-test
+# Bootstrapped skewness-adjusted t-test
 
 Implementation in R of the Bootstrapped Skewness-Adjusted t-test for testing long run mean abnormal returns as in "[Improved Methods for Tests of Long-Run Abnormal Stock Returns](http://doi.org/10.1111/0022-1082.00101)" by Lyon et al (1999).
 

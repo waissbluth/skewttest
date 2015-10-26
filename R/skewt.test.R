@@ -47,8 +47,8 @@ skewt.test <-
       gamma_b <- sum((xb - m_xb) ^ 3) / (nb * sd_xb ^ 3)
       tstat.calc(length(xb),S_b,gamma_b)
     })
-    hist(tsab)
-    abline(v = tstat,col = 'red')
+    #hist(tsab)
+    #abline(v = tstat,col = 'red')
     alpha <- 1 - conf.level
     tail <- if (tstat > 0)
       tsab > tstat

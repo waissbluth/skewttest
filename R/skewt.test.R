@@ -47,8 +47,8 @@ skewt.test <-
       gamma_b <- sum((xb - m_xb) ^ 3) / (nb * sd_xb ^ 3)
       tstat.calc(length(xb),S_b,gamma_b)
     })
-    #hist(tsab)
-    #abline(v = tstat,col = 'red')
+    # Remove NAs from the boostrapped vector
+    tsab <- tsab[!is.na(tsab)] # (caused by constant subsamples from x)
     alpha <- 1 - conf.level
     tail <- if (tstat > 0)
       tsab > tstat
